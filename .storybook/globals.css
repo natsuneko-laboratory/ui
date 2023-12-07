@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.docs-story {
+  @apply p-8;
+}
+
+/* workaround for theming */
+.css-es424d /* #storybook-docs > div > div > div.css-r4y50q > div.css-18s7g0r > div.css-es424d */ {
+  font-size: 13px !important;
+}
+
+#storybook-docs > div > div > div.css-r4y50q > div.css-18s7g0r > div.css-es424d {
+  color: #C9CDCF !important;
+}
+
+.css-1ofkq6d /* #stories > a */ {
+  margin-left: -24px !important;
+}
