@@ -51,7 +51,6 @@ const Admonition: React.FC<Props> = ({
           "mb-1 flex items-center dark:text-xl",
           type === "bug" && "text-rose-900 dark:text-rose-300",
           type === "danger" && "text-red-900 dark:text-red-300",
-          type === "danger" && "text-red-900 dark:text-red-300",
           type === "important" && "text-sky-900 dark:text-sky-300",
           type === "info" && "text-cyan-900 dark:text-cyan-300",
           type === "note" && "text-indigo-900 dark:text-indigo-300",
