@@ -39,10 +39,28 @@ export const _Heading1: Story = {
   ),
 };
 
+export const BorderedHeading1: Story = {
+  render: () => (
+    <Container>
+      <Heading1 bordered>Heading 1</Heading1>
+      <Paragraph>Paragraph</Paragraph>
+    </Container>
+  ),
+};
+
 export const _Heading2: Story = {
   render: () => (
     <Container>
       <Heading2>Heading 2</Heading2>
+      <Paragraph>Paragraph</Paragraph>
+    </Container>
+  ),
+};
+
+export const BorderedHeading2: Story = {
+  render: () => (
+    <Container>
+      <Heading2 bordered>Heading 2</Heading2>
       <Paragraph>Paragraph</Paragraph>
     </Container>
   ),
@@ -57,10 +75,28 @@ export const _Heading3: Story = {
   ),
 };
 
+export const BorderedHeading3: Story = {
+  render: () => (
+    <Container>
+      <Heading3 bordered>Heading 3</Heading3>
+      <Paragraph>Paragraph</Paragraph>
+    </Container>
+  ),
+};
+
 export const _Heading4: Story = {
   render: () => (
     <Container>
       <Heading4>Heading 4</Heading4>
+      <Paragraph>Paragraph</Paragraph>
+    </Container>
+  ),
+};
+
+export const BorderedHeading4: Story = {
+  render: () => (
+    <Container>
+      <Heading4 bordered>Heading 4</Heading4>
       <Paragraph>Paragraph</Paragraph>
     </Container>
   ),
@@ -75,10 +111,28 @@ export const _Heading5: Story = {
   ),
 };
 
+export const BorderedHeading5: Story = {
+  render: () => (
+    <Container>
+      <Heading5 bordered>Heading 5</Heading5>
+      <Paragraph>Paragraph</Paragraph>
+    </Container>
+  ),
+};
+
 export const _Heading6: Story = {
   render: () => (
     <Container>
       <Heading6>Heading 6</Heading6>
+      <Paragraph>Paragraph</Paragraph>
+    </Container>
+  ),
+};
+
+export const BorderedHeading6: Story = {
+  render: () => (
+    <Container>
+      <Heading6 bordered>Heading 6</Heading6>
       <Paragraph>Paragraph</Paragraph>
     </Container>
   ),
