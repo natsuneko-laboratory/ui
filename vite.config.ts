@@ -39,6 +39,9 @@ export default defineConfig({
         "react/jsx-runtime",
         "react-dom",
       ],
+      output: {
+        preserveModules: true,
+      },
     },
   },
 });
