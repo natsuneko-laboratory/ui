@@ -1,20 +1,113 @@
 {
   "name": "@natsuneko-laboratory/ui",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.es.js",
-      "types": "./src/main.ts"
+      "import": "./dist/main.es.js",
+      "require": "./dist/main.cjs.cjs",
+      "types": "./dist/main.d.ts"
+    },
+    "./forms/button": {
+      "import": "./dist/forms/button/index.es.js",
+      "require": "./dist/forms/button/index.cjs.cjs",
+      "types": "./dist/forms/button/index.d.ts"
+    },
+    "./forms/input": {
+      "import": "./dist/forms/input/index.es.js",
+      "require": "./dist/forms/input/index.cjs.cjs",
+      "types": "./dist/forms/input/index.d.ts"
+    },
+    "./hooks/*": {
+      "import": "./dist/hooks/*.es.js",
+      "require": "./dist/hooks/*.cjs.cjs",
+      "types": "./dist/hooks/*.d.ts"
+    },
+    "./layout/center": {
+      "import": "./dist/layout/center/index.es.js",
+      "require": "./dist/layout/center/index.cjs.cjs",
+      "types": "./dist/layout/center/index.d.ts"
+    },
+    "./layout/container": {
+      "import": "./dist/layout/container/index.es.js",
+      "require": "./dist/layout/container/index.cjs.cjs",
+      "types": "./dist/layout/container/index.d.ts"
+    },
+    "./layout/section": {
+      "import": "./dist/layout/section/index.es.js",
+      "require": "./dist/layout/section/index.cjs.cjs",
+      "types": "./dist/layout/section/index.d.ts"
+    },
+    "./media/logo": {
+      "import": "./dist/media/logo/index.es.js",
+      "require": "./dist/media/logo/index.cjs.cjs",
+      "types": "./dist/media/logo/index.d.ts"
+    },
+    "./media/themed-media": {
+      "import": "./dist/media/themed-media/index.es.js",
+      "require": "./dist/media/themed-media/index.cjs.cjs",
+      "types": "./dist/media/themed-media/index.d.ts"
+    },
+    "./miscellaneous/admonition": {
+      "import": "./dist/miscellaneous/admonition/index.es.js",
+      "require": "./dist/miscellaneous/admonition/index.cjs.cjs",
+      "types": "./dist/miscellaneous/admonition/index.d.ts"
+    },
+    "./miscellaneous/banner": {
+      "import": "./dist/miscellaneous/banner/index.es.js",
+      "require": "./dist/miscellaneous/banner/index.cjs.cjs",
+      "types": "./dist/miscellaneous/banner/index.d.ts"
+    },
+    "./miscellaneous/list": {
+      "import": "./dist/miscellaneous/list/index.es.js",
+      "require": "./dist/miscellaneous/list/index.cjs.cjs",
+      "types": "./dist/miscellaneous/list/index.d.ts"
+    },
+    "./miscellaneous/portal": {
+      "import": "./dist/miscellaneous/portal/index.es.js",
+      "require": "./dist/miscellaneous/portal/index.cjs.cjs",
+      "types": "./dist/miscellaneous/portal/index.d.ts"
+    },
+    "./navigations/breadcrumbs": {
+      "import": "./dist/navigations/breadcrumbs/index.es.js",
+      "require": "./dist/navigations/breadcrumbs/index.cjs.cjs",
+      "types": "./dist/navigations/breadcrumbs/index.d.ts"
+    },
+    "./navigations/hyperlink": {
+      "import": "./dist/navigations/hyperlink/index.es.js",
+      "require": "./dist/navigations/hyperlink/index.cjs.cjs",
+      "types": "./dist/navigations/hyperlink/index.d.ts"
+    },
+    "./templates/footer": {
+      "import": "./dist/templates/footer/index.es.js",
+      "require": "./dist/templates/footer/index.cjs.cjs",
+      "types": "./dist/templates/footer/index.d.ts"
+    },
+    "./templates/header": {
+      "import": "./dist/templates/header/index.es.js",
+      "require": "./dist/templates/header/index.cjs.cjs",
+      "types": "./dist/templates/header/index.d.ts"
+    },
+    "./typography/headings": {
+      "import": "./dist/typography/headings/index.es.js",
+      "require": "./dist/typography/headings/index.cjs.cjs",
+      "types": "./dist/typography/headings/index.d.ts"
+    },
+    "./typography/paragraph": {
+      "import": "./dist/typography/paragraph/index.es.js",
+      "require": "./dist/typography/paragraph/index.cjs.cjs",
+      "types": "./dist/typography/paragraph/index.d.ts"
     }
   },
+  "main": "./dist/main.cjs.cjs",
+  "types": "./dist/main.d.ts",
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && tsc --project ./tsconfig.tsc.json",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -50,6 +143,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "eslint-plugin-storybook": "^0.6.15",
+    "fast-glob": "^3.3.2",
+    "normalize-path": "^3.0.0",
     "postcss": "^8.4.32",
     "prettier": "^3.1.0",
     "react": "^18.2.0",
