@@ -1,0 +1,34 @@
+name: "Publish Storybook to Cloudflare Pages"
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Node.js
+        uses: ./.github/composite/nodejs
+
+      - name: Build Package
+        shell: bash
+        run: |
+          pnpm build-storybook
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: "6eaad539757dc4a8c0ad702128830d73"
+          projectName: "natsuneko-lanboratory-ui"
+          directory: "storybook-static"
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
