@@ -14,10 +14,17 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       entry: rel("src/main.tsx"),
+      fileName: "index.[format]",
       formats: ["es"],
     },
     rollupOptions: {
-      external: ["react", "react/jsx-runtime"],
+      external: [
+        "clsx",
+        "tailwind-merge",
+        "react",
+        "react/jsx-runtime",
+        "react-dom",
+      ],
     },
   },
 });
