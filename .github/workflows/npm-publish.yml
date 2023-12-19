@@ -1,0 +1,29 @@
+name: "Publish Package to NPM"
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Node.js
+        uses: ./.github/composite/nodejs
+
+      - name: Build Package
+        shell: bash
+        run: |
+          pnpm build
+
+      - name: Publish Package
+        shell: bash
+        run: |
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
