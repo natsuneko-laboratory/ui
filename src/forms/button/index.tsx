@@ -38,7 +38,7 @@ const Button: React.FC<Props> = ({
         ],
         variant === "text" && [
           "border-none bg-transparent text-neutral-800 dark:text-neutral-200",
-          "[&:not(:disabled)]:active:bg-neutral-200 active:dark:bg-neutral-700", // active
+          "[&:not(:disabled)]:active:bg-neutral-200 [&:not(:disabled)]:active:dark:bg-neutral-700", // active
           "[&:not(:active,:disabled)]:hover:bg-neutral-200 [&:not(:active,:disabled)]:hover:dark:bg-neutral-700", // hover
         ],
         className
