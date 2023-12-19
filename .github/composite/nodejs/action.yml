@@ -8,6 +8,8 @@ runs:
       with:
         node-version-file: ".node-version"
         registry-url: "https://registry.npmjs.org"
+        always-auth: true
+        scope: "@natsuneko-laboratory"
 
     - name: Install pnpm
       uses: pnpm/action-setup@v2
