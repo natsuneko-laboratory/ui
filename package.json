@@ -160,7 +160,6 @@
     "react-dom": "^18.2.0"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "@natsuneko-laboratory/ui@0.0.0",
   "publishConfig": {
     "access": "public"
   }
