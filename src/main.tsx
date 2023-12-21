@@ -28,6 +28,7 @@ export { LinkButton } from "./navigations/link-button";
 export { Footer } from "./templates/footer";
 export { Header } from "./templates/header";
 
+export { Blockquote } from "./typography/blockquote";
 export {
   Heading1,
   Heading2,
