@@ -1,3 +1,5 @@
+/* eslint-disable react-refresh/only-export-components */
+
 // components
 export { Button } from "./forms/button";
 export { Input } from "./forms/input";
