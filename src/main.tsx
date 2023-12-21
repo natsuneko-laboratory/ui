@@ -23,6 +23,7 @@ export { Portal } from "./miscellaneous/portal";
 
 export { Breadcrumb, type BreadcrumbItem } from "./navigations/breadcrumbs";
 export { Hyperlink } from "./navigations/hyperlink";
+export { LinkButton } from "./navigations/link-button";
 
 export { Footer } from "./templates/footer";
 export { Header } from "./templates/header";
