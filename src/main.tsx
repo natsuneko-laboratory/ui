@@ -16,6 +16,7 @@ export { Input } from "./forms/input";
 export { Center } from "./layouts/center";
 export { Container } from "./layouts/container";
 export { Section } from "./layouts/section";
+export { Stack } from "./layouts/stack";
 
 export { Logo } from "./media/logo";
 export { ThemedMedia } from "./media/themed-media";
