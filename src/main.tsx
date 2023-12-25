@@ -14,6 +14,7 @@ export { Button } from "./forms/button";
 export { Input } from "./forms/input";
 
 export { Center } from "./layouts/center";
+export { Cluster } from "./layouts/cluster";
 export { Container } from "./layouts/container";
 export { Section } from "./layouts/section";
 export { Stack } from "./layouts/stack";
