@@ -34,6 +34,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         "clsx",
+        "next/link",
         "tailwind-merge",
         "react",
         "react/jsx-runtime",
