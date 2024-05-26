@@ -12,6 +12,7 @@ export {
 
 export { Button } from "./forms/button";
 export { Input } from "./forms/input";
+export { TextArea } from "./forms/textarea";
 
 export { Center } from "./layouts/center";
 export { Cluster } from "./layouts/cluster";
@@ -53,3 +54,6 @@ export { Paragraph } from "./typography/paragraph";
 // hooks
 export { useHashParams } from "./hooks/useHashParams";
 export { useLockedBody } from "./hooks/useLockedBody";
+
+// libs
+export { merge as classnames } from "./utils/class";
