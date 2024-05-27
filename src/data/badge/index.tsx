@@ -32,6 +32,7 @@ const Badge: React.FC<Props> = ({ type, className, children, ...props }) => {
         type === "tip" && "bg-emerald-600 dark:bg-emerald-900",
         type === "warning" && "bg-orange-600 dark:bg-orange-900"
       )}
+      {...props}
     >
       {children}
     </div>
