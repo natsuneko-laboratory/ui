@@ -50,7 +50,7 @@ const Select = <T extends ItemBase>({
       <select
         className={merge(
           // base
-          "px-4 pr-8 py-2 outline-none appearance-none border rounded-none",
+          "w-full px-4 pr-8 py-2 outline-none appearance-none border rounded-none",
           "text-neutral-700 dark:text-neutral-300",
           "placeholder:text-neutral-400 dark:placeholder:text-neutral-500", // placeholder
           "bg-transparent dark:bg-neutral-900", // bg
