@@ -24,14 +24,30 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <>
-      <Banner type="bug" children={<LoremIpsum />} />
-      <Banner type="danger" children={<LoremIpsum />} />
-      <Banner type="important" children={<LoremIpsum />} />
-      <Banner type="info" children={<LoremIpsum />} />
-      <Banner type="note" children={<LoremIpsum />} />
-      <Banner type="success" children={<LoremIpsum />} />
-      <Banner type="tip" children={<LoremIpsum />} />
-      <Banner type="warning" children={<LoremIpsum />} />
+      <Banner type="bug">
+        <LoremIpsum />
+      </Banner>
+      <Banner type="danger">
+        <LoremIpsum />
+      </Banner>
+      <Banner type="important">
+        <LoremIpsum />
+      </Banner>
+      <Banner type="info">
+        <LoremIpsum />
+      </Banner>
+      <Banner type="note">
+        <LoremIpsum />
+      </Banner>
+      <Banner type="success">
+        <LoremIpsum />
+      </Banner>
+      <Banner type="tip">
+        <LoremIpsum />
+      </Banner>
+      <Banner type="warning">
+        <LoremIpsum />
+      </Banner>
     </>
   ),
 };

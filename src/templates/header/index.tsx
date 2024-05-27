@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 
 import { Container } from "../../layouts/container";
 import { ThemedMedia } from "../../media/themed-media";
