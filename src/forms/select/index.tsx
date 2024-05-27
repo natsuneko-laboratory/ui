@@ -57,10 +57,6 @@ const Select = <T extends ItemBase>({
           "border-neutral-400 dark:border-neutral-700", // border
           "focus:border-sky-400 dark:focus:border-sky-700", // focus
           "disabled:text-opacity-50 disabled:bg-neutral-100 disabled:dark:bg-neutral-800 disabled:dark:text-neutral-500", // disabled
-
-          // arrow
-          "after:content-['△']",
-
           className
         )}
         disabled={disabled}
