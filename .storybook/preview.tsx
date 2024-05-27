@@ -22,7 +22,7 @@ const preview: Preview = {
     StoryDecorator,
   ],
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: {},
     controls: {
       matchers: {
         color: /(background|color)$/i,
