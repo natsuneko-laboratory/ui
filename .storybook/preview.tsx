@@ -4,7 +4,7 @@ import { DocsContainer } from "@storybook/blocks";
 import { themes } from "@storybook/theming";
 import { useDarkMode } from "storybook-dark-mode";
 
-import type { Decorator, Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react";
 
 import "./globals.css";
 import { StoryDecorator } from "./decorators/StoryDecotrator";
@@ -35,6 +35,7 @@ const preview: Preview = {
       stylePreview: true,
     },
     docs: {
+      // biome-ignore lint/suspicious/noExplicitAny: <explanation>
       container: (context: any) => {
         const isDark = useDarkMode();
         const currentProps = { ...context };
