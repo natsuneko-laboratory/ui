@@ -1,6 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 
 // components
+export { Accordion } from "./data/accordion";
 export { Badge } from "./data/badge";
 export {
   Table,
