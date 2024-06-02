@@ -14,6 +14,7 @@ export {
 export { Button } from "./forms/button";
 export { Input } from "./forms/input";
 export { Select } from "./forms/select";
+export { Switch } from "./forms/switch";
 export { TextArea } from "./forms/textarea";
 
 export { Center } from "./layouts/center";
