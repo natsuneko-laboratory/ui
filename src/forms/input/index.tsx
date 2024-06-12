@@ -1,8 +1,8 @@
 "use client";
 
 import type React from "react";
-import { useCallback, useEffect, useState } from "react";
 
+import { useInputComposition } from "../../hooks/useInputComposition";
 import { merge } from "../../utils/class";
 
 type Props = {
@@ -22,29 +22,14 @@ const Input: React.FC<Props> = ({
   onValueChanged,
   ...rest
 }) => {
-  const [state, setState] = useState(initialValue);
-
-  useEffect(() => {
-    setState(initialValue);
-  }, [initialValue]);
-
-  const onInputChanged = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => {
-      const value = (e.target as HTMLInputElement).value;
-      setState(value);
-
-      if (onValueChanged) {
-        onValueChanged(value);
-      }
-    },
-    [onValueChanged]
-  );
+  const { onChange, onCompositionEnd, onCompositionStart } =
+    useInputComposition({ initialValue, onTextChanged: onValueChanged });
 
   const pwIgnore = avoidAutoFillByPasswordManager ? true : undefined;
 
   return (
     <input
-      value={state}
+      defaultValue={initialValue}
       type={type}
       className={merge(
         "px-4 py-2 outline-none appearance-none border rounded-none",
@@ -57,7 +42,9 @@ const Input: React.FC<Props> = ({
         "disabled:text-opacity-50 disabled:bg-neutral-100 disabled:dark:bg-neutral-800 disabled:dark:text-neutral-500", // disabled
         className
       )}
-      onChange={onInputChanged}
+      onChange={onChange}
+      onCompositionStart={onCompositionStart}
+      onCompositionEnd={onCompositionEnd}
       // 1Password: https://developer.1password.com/docs/web/compatible-website-design/
       data-1p-ignore={pwIgnore}
       // LastPass: https://support.lastpass.com/s/document-item?language=en_US&bundleId=lastpass&topicId=LastPass/c_lp_prevent_fields_from_being_filled_automatically.html&_LANG=enus

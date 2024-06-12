@@ -7,13 +7,17 @@ const useHashParams = () => {
     setHash(window.location.hash.substring(1));
   }, []);
 
-  const write = useCallback((newValue: string) => {
-    if (newValue !== value) {
-      window.location.hash = newValue;
-    }
+  const write = useCallback(
+    (newValue: string) => {
+      if (newValue !== value) {
+        window.location.hash = newValue;
+      }
+    },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    [value]
+  );
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     window.addEventListener("hashchange", onHashChanged);
 
