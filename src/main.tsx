@@ -58,6 +58,8 @@ export { Paragraph } from "./typography/paragraph";
 
 // hooks
 export { useHashParams } from "./hooks/useHashParams";
+export { useTextLength, useTextLengthWatch } from "./hooks/useHumanTextLength";
+export { useInputComposition } from "./hooks/useInputComposition";
 export { useLockedBody } from "./hooks/useLockedBody";
 
 // libs

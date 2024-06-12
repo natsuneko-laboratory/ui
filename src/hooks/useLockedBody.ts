@@ -38,6 +38,7 @@ const useLockedBody = (initialState: boolean, rootId: string) => {
     };
   }, [rootId, isLocked]);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     if (isLocked !== initialState) {
       setIsLocked(!initialState);
