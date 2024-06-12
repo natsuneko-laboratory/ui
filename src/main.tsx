@@ -36,6 +36,7 @@ export {
   ListItem,
 } from "./miscellaneous/list";
 export { Portal } from "./miscellaneous/portal";
+export { TailwindIndicator } from "./miscellaneous/tailwind-indicator";
 
 export { Breadcrumb, type BreadcrumbItem } from "./navigations/breadcrumbs";
 export { Hyperlink } from "./navigations/hyperlink";
