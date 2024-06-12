@@ -28,6 +28,7 @@ export { Logo } from "./media/logo";
 export { ThemedMedia } from "./media/themed-media";
 
 export { Admonition } from "./miscellaneous/admonition";
+export { Backdrop } from "./miscellaneous/backdrop";
 export { Banner } from "./miscellaneous/banner";
 export {
   List,
