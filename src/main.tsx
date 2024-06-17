@@ -45,6 +45,7 @@ export { LinkButton } from "./navigations/link-button";
 
 export { Footer } from "./templates/footer";
 export { Header } from "./templates/header";
+export { KeyValueGrid, KeyValueItem } from "./templates/key-value";
 
 export { Blockquote } from "./typography/blockquote";
 export {
