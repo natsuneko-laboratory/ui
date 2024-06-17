@@ -13,7 +13,6 @@ const useHashParams = () => {
         window.location.hash = newValue;
       }
     },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [value]
   );
 
