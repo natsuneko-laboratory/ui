@@ -13,6 +13,7 @@ export {
 } from "./data/table";
 
 export { Button } from "./forms/button";
+export { ColorPicker } from "./forms/color-picker";
 export { Input } from "./forms/input";
 export { Select } from "./forms/select";
 export { Switch } from "./forms/switch";
@@ -23,6 +24,7 @@ export { Cluster } from "./layouts/cluster";
 export { Container } from "./layouts/container";
 export { Section } from "./layouts/section";
 export { Stack } from "./layouts/stack";
+export { Tab, type ClickItem, type LinkItem } from "./layouts/tab";
 
 export { Logo } from "./media/logo";
 export { ThemedMedia } from "./media/themed-media";
@@ -41,7 +43,6 @@ export { TailwindIndicator } from "./miscellaneous/tailwind-indicator";
 
 export { Breadcrumb, type BreadcrumbItem } from "./navigations/breadcrumbs";
 export { Hyperlink } from "./navigations/hyperlink";
-export { LinkButton } from "./navigations/link-button";
 
 export { Footer } from "./templates/footer";
 export { Header } from "./templates/header";

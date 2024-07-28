@@ -1,10 +1,10 @@
 import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import react from "@vitejs/plugin-react";
 import glob from "fast-glob";
 import normalize from "normalize-path";
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 
 const rel = (...paths: string[]) =>
   resolve(dirname(fileURLToPath(import.meta.url)), ...paths);
@@ -39,6 +39,8 @@ export default defineConfig({
         "react",
         "react/jsx-runtime",
         "react-dom",
+        "react-color",
+        "shiki",
       ],
       output: {
         preserveModules: true,

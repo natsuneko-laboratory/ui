@@ -23,3 +23,12 @@ module.exports = {
 ```typescript
 import { Container } from "@natsuneko-laboratory/ui/layouts/container";
 ```
+
+## Peer Dependencies
+
+- `next`
+  - `navigations/link-button/next`
+- `react-color`
+  - `forms/color-picker`
+- `shiki`
+  - `data/code-block`
