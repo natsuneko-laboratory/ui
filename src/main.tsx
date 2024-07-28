@@ -42,6 +42,7 @@ export { Portal } from "./miscellaneous/portal";
 export { TailwindIndicator } from "./miscellaneous/tailwind-indicator";
 
 export { Breadcrumb, type BreadcrumbItem } from "./navigations/breadcrumbs";
+export { InferredIconLink } from "./navigations/inferred-link";
 export { Hyperlink } from "./navigations/hyperlink";
 
 export { Footer } from "./templates/footer";
