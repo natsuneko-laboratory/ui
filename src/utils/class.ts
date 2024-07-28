@@ -5,4 +5,4 @@ import type { ClassValue } from "clsx";
 
 const merge = (...inputs: ClassValue[]) => twMerge(clsx(inputs));
 
-export { merge };
+export { merge, merge as classnames };
